@@ -1,6 +1,6 @@
 <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()">
   <div>
-    <label>Check-In Date</label>
+    <label>Check-In Date:</label>
     <input type="date" formControlName="checkInDate">
     <div *ngIf="reservationForm.get('checkInDate')?.invalid && reservationForm.get('checkInDate')?.touched">
       Check-In Date is Required
@@ -9,7 +9,7 @@
   </div>
 
   <div>
-    <label>Check-Out Date</label>
+    <label>Check-Out Date:</label>
     <input type="date" formControlName="checkOutDate">
     <div *ngIf="reservationForm.get('checkOutDate')?.invalid && reservationForm.get('checkOutDate')?.touched">
       Check-Out Date is Required
