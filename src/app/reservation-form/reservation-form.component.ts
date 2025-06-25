@@ -5,11 +5,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReservationService } from '../reservation/reservation.service';
 import { Reservation } from '../models/reservation';
 import { Router, ActivatedRoute } from '@angular/router';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-reservation-form',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule], // imports
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, HomeComponent], // imports
   templateUrl: './reservation-form.component.html',
   styleUrl: './reservation-form.component.css',
 })
@@ -42,21 +43,24 @@ export class ReservationFormComponent implements OnInit {
   }
 
   onSubmit() {
-    if (this.reservationForm.valid) {
-      let reservation: Reservation = this.reservationForm.value;
-
-      let id = this.activatedRoute.snapshot.paramMap.get('id');
-
-      if (id) {
-        //Update
-
-        this.reservationService.updateReservation(id, reservation);
-      } else {
-        // New
-        this.reservationService.addReservation(reservation);
-      }
-
-      this.router.navigate(['/list']);
+    if (this.reservationForm.invalid) {
+      //mark all fields as touched
+      this.reservationForm.markAllAsTouched();
+      return;
     }
+    let reservation: Reservation = this.reservationForm.value;
+
+    let id = this.activatedRoute.snapshot.paramMap.get('id');
+
+    if (id) {
+      //Update
+
+      this.reservationService.updateReservation(id, reservation);
+    } else {
+      // New
+      this.reservationService.addReservation(reservation);
+    }
+
+    this.router.navigate(['/list']);
   }
 }
