@@ -1,59 +1,89 @@
-# HotelApp
+# Hotel App 🏨
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+A modern hotel reservation platform built with **Angular** and **TypeScript**. This single-page application allows users to browse hotel listings, create and manage reservations, and interact with a responsive, clean UI.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📸 Demo
 
-```bash
-ng serve
-```
+> (Optional: Add a link to a hosted demo or Loom walkthrough)  
+> Include screenshots or animated GIFs of the main UI (homepage, booking modal, etc.)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## ⚙️ Tech Stack
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Framework:** Angular (v17+)
+- **Language:** TypeScript
+- **Routing:** Angular Router
+- **State Management:** Service-based state (RxJS)
+- **UI:** SCSS, HTML5, Angular Material (optional if used)
+- **Testing:** Jasmine & Karma (coming soon)
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🚀 Features
 
-```bash
-ng generate --help
-```
+- Browse available hotel listings
+- Book a room with interactive form validation
+- View and cancel reservations
+- Responsive design for mobile and desktop
+- Modular architecture with reusable components
+- Basic form validation and state persistence
 
-## Building
+---
 
-To build the project run:
+## 🧠 Learning Goals
 
-```bash
-ng build
-```
+This project was built to solidify key Angular concepts:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Component architecture and communication
+- Dependency injection and services
+- Angular routing and lazy loading
+- Form building and validation
+- Observables and reactive programming
+- Separation of concerns using modules
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🛠 Setup Instructions
 
-```bash
-ng test
-```
+1. **Clone the repository**
 
-## Running end-to-end tests
+       git clone https://github.com/pheyboer/hotel-app.git
+       cd hotel-app
 
-For end-to-end (e2e) testing, run:
+2. **Install dependencies**
 
-```bash
-ng e2e
-```
+       npm install
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+3. **Run the development server**
 
-## Additional Resources
+       ng serve
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+4. **Visit the app**
+
+       http://localhost:4200
+
+---
+
+## 🔧 To Do / Improvements
+
+- Add backend integration (e.g., Node.js, Firebase, or Express API)
+- Add unit and E2E tests
+- Improve accessibility (ARIA, keyboard nav)
+- Implement search, filters, and pagination
+
+---
+
+## 🙋‍♂️ Author
+
+**Peter Heyboer**  
+[LinkedIn](https://www.linkedin.com/in/peterheyboer/)  
+[GitHub](https://github.com/pheyboer)
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
