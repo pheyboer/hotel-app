@@ -4,13 +4,6 @@ A modern hotel reservation platform built with **Angular** and **TypeScript**. T
 
 ---
 
-## 📸 Demo
-
-> (Optional: Add a link to a hosted demo or Loom walkthrough)  
-> Include screenshots or animated GIFs of the main UI (homepage, booking modal, etc.)
-
----
-
 ## ⚙️ Tech Stack
 
 - **Framework:** Angular (v17+)
